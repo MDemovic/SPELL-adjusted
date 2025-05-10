@@ -1,0 +1,10 @@
+ExecutableFile \sqcap \exists has_file_feature.\top \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_file_feature.NonstandardMZ
+
+ExecutableFile \sqcap \exists has_file_feature.\top \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_file_feature.\top \sqcap \exists has_section.\exists has_section_flag.Writable
+

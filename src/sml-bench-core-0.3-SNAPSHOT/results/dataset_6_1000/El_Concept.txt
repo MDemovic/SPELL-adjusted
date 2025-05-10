@@ -1,0 +1,10 @@
+ExecutableFile \sqcap \exists has_section.(\exists has_section_feature.\top \sqcap \exists has_section_flag.Readable) \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_section.(\exists has_section_flag.Readable \sqcap \exists has_section_flag.Writable) \sqcap \exists has_section.\exists has_section_feature.\top
+
+ExecutableFile \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_section.\exists has_section_flag.Writable
+
+ExecutableFile \sqcap \exists has_section.\exists has_section_feature.\top \sqcap \exists has_section.\exists has_section_flag.Writable
+

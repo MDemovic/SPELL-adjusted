@@ -1,0 +1,12 @@
+{
+  config = 1;
+  learningsystems = ( spell );
+  scenarios = ( sivis_1_20000/1 );
+  measures = ( ameasure, fmeasure, pred_acc ); 
+  framework = {
+    crossValidationFolds = 5;
+    maxExecutionTime = 18000;
+  };
+  resultOutput = results/families/sivis_1_20000.prop;
+  deleteWorkDir = false;
+}

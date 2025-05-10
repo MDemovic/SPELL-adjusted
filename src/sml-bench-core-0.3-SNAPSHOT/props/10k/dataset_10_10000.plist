@@ -1,0 +1,12 @@
+{
+  config = 1;
+  learningsystems = ( spell );
+  scenarios = ( dataset_10_10000/1 );
+  measures = ( ameasure, fmeasure, pred_acc );
+  framework = {
+    crossValidationFolds = 5;
+    maxExecutionTime = 9000;
+  };
+  resultOutput = results/dataset_10_10000/dataset_10_10000.prop;
+  deleteWorkDir = false;
+}

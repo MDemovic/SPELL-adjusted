@@ -27,6 +27,29 @@ chmod +x run run
 chmod +x run robot
 ```
 
+## Experiments
+If we are inside of the sml-bench dir, we can simply run these commands, all the results and data will be in the results directory.
+
+```
+for i in {1..10}; do
+    bin/smlbench "props/1k/dataset_${i}_1000.plist"
+done
+
+for i in {1..10}; do
+    bin/smlbench "props/10k/dataset_${i}_10000.plist"
+done
+
+for i in {1..10}; do
+    bin/smlbench "props/100k/dataset_${i}_100000.plist"
+done
+
+bin/smlbench props/800k/dataset_1_800000.plist
+
+for name in baseline fareit sivis vtflooder wannacry zusy; do
+    bin/smlbench "props/20k/${name}_1_20000.plist"
+done
+```
+
 ## Contact
 
 For questions, issues, or collaboration opportunities, feel free to contact me at:  

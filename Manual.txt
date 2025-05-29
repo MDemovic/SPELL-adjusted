@@ -1,0 +1,42 @@
+Manual
+- cd sml-bench-core-0.3-SNAPSHOT/
+- Create a Symbolic link for spell, PATH_TO_SPELL is individual
+(symbolic link is between root folder spell and in sml-bench-snapshot/learningsystems/spell <- Inside)
+ls -s PATH_TO_SPELL/spell learningsystems/spell
+
+- source ~/SPELL/spell-venv/bin/activate
+(if required libs not installed do:
+pip install -r requirements.txt
+pip install python-sat
+pip install lxml
+)
+
+- After unzipping, known error is caused with run and validate file in learningsystems of sml-bench-core-0.3-SNAPSHOT
+ chmod +x run
+ chmod +x validate
+
+And also inside the robot file
+
+ chmod +x robot
+
+
+- If we are inside of the sml-bench dir, we can simply run these commands, all the results and data will be in the results directory.
+- Each take approx 20hours, since we set the time to 2hours per .plist
+
+for i in {1..10}; do
+    bin/smlbench "props/1k/dataset_${i}_1000.plist"
+done
+
+for i in {1..10}; do
+    bin/smlbench "props/10k/dataset_${i}_10000.plist"
+done
+
+for i in {1..10}; do
+    bin/smlbench "props/100k/dataset_${i}_100000.plist"
+done
+
+bin/smlbench props/800k/dataset_1_800000.plist
+
+for name in baseline fareit sivis vtflooder wannacry zusy; do
+    bin/smlbench "props/20k/${name}_1_20000.plist"
+done
